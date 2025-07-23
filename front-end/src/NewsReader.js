@@ -1,4 +1,3 @@
-
 import { QueryForm } from './QueryForm';
 import { Articles } from './Articles';
 import { useState, useEffect } from 'react';
@@ -159,9 +158,14 @@ async function getNews(queryObject) {
           </div>
           <div className="box">
             <span className='title'>Saved Queries</span>
-            <SavedQueries savedQueries={savedQueries}
-            selectedQueryName={query.queryName}
-            onQuerySelect={onSavedQuerySelect} />
+              <SavedQueries 
+              user={currentUser}
+              savedQueries={savedQueries}
+              selectedQueryName={query.queryName}
+              onQuerySelect={onSavedQuerySelect} 
+              setSavedQueries={setSavedQueries} 
+              saveQueryList={saveQueryList}
+            />
           </div>
           <div className="box">
             <span className='title'>Articles List</span>
