@@ -1,0 +1,76 @@
+checkbox-container {
+    margin: 10px 0;
+
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    color: #6c757d;
+    cursor: pointer;
+    font-style: italic;
+  }
+  
+  .checkbox-input {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  .checkbox-label:hover {
+    color: #495057;
+  }
+  .query-details {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 0.8em;        
+    font-style: italic;      
+}
+
+.query-details h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #6c757d;
+    font-size: 1em;          
+    font-style: italic;      
+}
+
+.query-details li {
+    margin-bottom: 5px;
+    color: #6c757d;
+    font-size: 0.9em;        
+    font-style: italic;      
+}
+.articles-list {
+    background-color: #ffffff;
+    border: 2px solid #545556;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.articles-list ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.articles-list li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.4;
+    color: #333;
+}
+
+.articles-list a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.articles-list a:hover {
+    text-decoration: underline;
+}
