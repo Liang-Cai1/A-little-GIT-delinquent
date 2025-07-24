@@ -47,12 +47,11 @@ export function Articles(params) {
                 if (item.title === "[Removed]") {
                   return <li key={idx}>Was Removed</li>;
                 }
-                let trimTitle = item.title.substring(0, 30);
+                let trimTitle = item.title.substring(0, 100);
                 return (
                   <li key={idx}>
-                    {trimTitle}
                     <a href={item.url} target="_blank" rel="noreferrer">
-                      &nbsp;Link
+                      {trimTitle}
                     </a>
                   </li>
                 );
