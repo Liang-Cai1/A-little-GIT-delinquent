@@ -2,16 +2,16 @@ import React from "react";
 
 const cannedQueries = [
   {
-    queryName: "Default Query Name 1",
-    q: "Default Query Text"
+    queryName: "Query01",
+    q: "sports"
   },
   {
-    queryName: "Default Query Name 2",
-    q: "Default Query Text"
+    queryName: "Query02",
+    q: "weather"
   },
   {
-    queryName: "Default Query Name 3",
-    q: "Default Query Text"
+    queryName: "Query03",
+    q: "politics"
   }
 ];
 
