@@ -1,6 +1,23 @@
 import React from "react";
 
+const cannedQueries = [
+  {
+    queryName: "Default Query Name 1",
+    q: "Default Query Text"
+  },
+  {
+    queryName: "Default Query Name 2",
+    q: "Default Query Text"
+  },
+  {
+    queryName: "Default Query Name 3",
+    q: "Default Query Text"
+  }
+];
+
 export function SavedQueries(params) {
+
+  const displayQueries = params.user ? params.savedQueries : cannedQueries;
 
   function onSavedQueryClick(savedQuery){
     params.onQuerySelect(savedQuery);
@@ -17,7 +34,7 @@ export function SavedQueries(params) {
   }
 
   function getQueries() {
-    return params.savedQueries.map((item, idx) => {
+    return displayQueries.map((item, idx) => {
       const trimTitle = item.queryName.substring(0, 30);
       return (
         <li 
@@ -34,7 +51,7 @@ export function SavedQueries(params) {
   return (
     <div>
       <ul>
-        {(params.savedQueries && params.savedQueries.length > 0)
+        {(displayQueries && displayQueries.length > 0)
           ? getQueries()
           : <li>No Saved Queries to display</li>
         }
