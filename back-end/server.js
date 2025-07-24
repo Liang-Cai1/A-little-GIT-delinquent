@@ -3,6 +3,7 @@ import newsRouter from './routes/news/news.js';
 import usersRouter from './routes/users/users.js';
 import queriesRouter from './routes/queries/queries.js'
 
+
 const app = express();
 const port = process.env.PORT || 4000; 
 
@@ -16,4 +17,3 @@ app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 }); 
 
-//testingthecommitactions
