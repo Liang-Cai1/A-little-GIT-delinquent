@@ -4,7 +4,11 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "node --require dotenv/config server.js"
+=======
+    "start": "node server.js"
+>>>>>>> 7c54950 (WIP: saving my current work)
   },
   "keywords": [],
   "author": "",
@@ -13,6 +17,7 @@
   "dependencies": {
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
-    "mongodb": "^6.17.0"
+    "mongodb": "^6.17.0",
+    "react-scripts": "^4.0.3"
   }
 }

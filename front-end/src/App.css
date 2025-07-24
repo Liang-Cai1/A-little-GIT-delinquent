@@ -1,14 +1,43 @@
-ol{
+/* Base styles */
+ol {
   font-size: small;
 }
 
 .scroll-container {
-  height: 400px; /* Adjust height as needed */
-  width: 300px;
+  height: 400px; 
+  width: 100%; 
+  max-width: 300px; 
   overflow-y: scroll;
-  border: 1px solid #ddd; /* Optional border for styling */
+  border: 1px solid #ddd;
+  margin: 0 auto; 
+  box-sizing: border-box; 
+  padding: 10px;
 }
 
-header,p{
-  font-weight:bold;
+header, p {
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+
+
+@media (max-width: 600px) {
+  ol {
+    font-size: smaller;
+  }
+
+  .scroll-container {
+    max-width: 90vw; 
+    height: 300px; 
+  }
+
+  header, p {
+    font-size: 1.2rem;
+  }
+}
+
+.App-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
