@@ -2,7 +2,7 @@ import express from "express";
 import { client, connect } from "./db.js";
 const dbName = "usersdb";
 const collectionName = "users";
-connect(); // Connect to MongoDB
+connect();
 const router = express.Router();
 
 router.get("/", async (req, res) => {
@@ -32,7 +32,6 @@ router.post("/authenticate", async (req, res) => {
     if (result) {
       console.log(`Found user: ${result.user}, comparing passwords`);
 
-      // 🔍 ADD THIS SPECIFIC DEBUG LINE:
       console.log(
         `Password comparison: DB="${
           result.password

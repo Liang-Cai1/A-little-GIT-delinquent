@@ -19,7 +19,7 @@ body {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background: white;
+  background: #FFD000;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
 }
@@ -27,7 +27,7 @@ body {
 /* Header styling */
 header {
   padding-bottom: 20px;
-  border-bottom: 2px solid #007bff;
+  border-bottom: 2px solid #1A1446;
   margin-bottom: 30px;
 }
 
@@ -35,7 +35,7 @@ header p {
   font-weight: 600;
   font-size: 1.8rem;
   text-align: center;
-  color: #007bff;
+  color: #1A1446;
   margin: 0;
 }
 
@@ -70,6 +70,28 @@ ol li {
   margin-bottom: 10px;
   line-height: 1.4;
 }
+button, input[type="button"] {
+  background: #06748C;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between image and text */
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
@@ -91,4 +113,6 @@ ol li {
   ol {
     font-size: 0.8rem;
   }
+
+
 }

@@ -158,16 +158,16 @@ export function NewsReader() {
 
   return (
     <div>
-      <LoginForm
-        login={login}
-        credentials={credentials}
-        currentUser={currentUser}
-        setCredentials={setCredentials}
-      />
       <div>
+        <LoginForm
+          login={login}
+          credentials={credentials}
+          currentUser={currentUser}
+          setCredentials={setCredentials}
+        />
         <section className="parent">
           <div className="box">
-            <span className="title">Query Form</span>
+            <span className="title">Search for News</span>
             <QueryForm
               currentUser={currentUser}
               setFormObject={setQueryFormObject}
@@ -176,18 +176,18 @@ export function NewsReader() {
             />
           </div>
           <div className="box">
-            <span className='title'>Saved Queries</span>
-              <SavedQueries 
+            <span className="title">Topics you may be interested in</span>
+            <SavedQueries
               user={currentUser}
               savedQueries={savedQueries}
               selectedQueryName={query.queryName}
-              onQuerySelect={onSavedQuerySelect} 
-              setSavedQueries={setSavedQueries} 
+              onQuerySelect={onSavedQuerySelect}
+              setSavedQueries={setSavedQueries}
               saveQueryList={saveQueryList}
             />
           </div>
           <div className="box">
-            <span className="title">Articles List</span>
+            <span className="title">Articles</span>
             <Articles query={query} data={data} />
           </div>
         </section>
